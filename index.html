@@ -4,73 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 2</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <link rel="stylesheet" href="static/reset.css">
+    <link rel="stylesheet" href="static/style.css">
+
+    <title>Document</title>
 </head>
 
-<body id="corpo">
-    <header id="cabeçalho">
-        <h1><span id="tec">Tec</span><span id="blog">Blog</span></h1>
-        <nav id="menu">
-            <ul id="lista">
-                <li><a>Home</a></li>
-                <li><a>Jogos</a></li>
-                <li><a>Celulares</a></li>
-                <li><a>Informática</a></li>
-                <li><a>Eletrônicos</a></li>
-            </ul>
-        </nav>
+<body>
+    <header class="cabecalho">
+        <div class="titulo_cabecalho">
+            <h1 id="tec">Tec</h1>
+            <h1 id="blog">Blog</h1>
+        </div>
+        <ul class="lista_cabecalho">
+            <li>
+                <a>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a>
+                    Jogos
+                </a>
+            </li>
+            <li>
+                <a>
+                    Celulares
+                </a>
+            </li>
+            <li>
+                <a>
+                    Informatica
+                </a>
+            </li>
+            <li>
+                <a>
+                    Eletronicos
+                </a>
+            </li>
+        </ul>
     </header>
-    <main id="principal">
-        <div>
-            <h2>Título da postagem 1</h2>
-            <p>postado 20 março 2022</p>
-            <img src="imagens/imagem1.jpg">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br>
-                ut labore et dolore magna Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolum reprehenderit in voluptate <br>
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <br>
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
-            </p>
-            <a class="link">Leia mais</a>
+    <main>
+        <div class="principal">
+            <section class="containers_principais">
+                <card class="card_principal">
+                    <div class="card_titulos">
+                        <h2 class="titulo_postagem">Titulo postagem 1</h2>
+                        <h3 class="subtitulo_card">postado 20 de março 2022</h3>
+                    </div>
+                    <img class="imagem_card" src="imagens/imagem1.jpg">
+                    <div class="card_texto">
+                        <p class="card_paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corrupti
+                            explicabo maxime non vitae earum nesciunt exercitationem. Vel eos vero dolor tempore
+                            incidunt accusamus sapiente earum tenetur! Illum, sunt repudiandae!</p>
+                        <a class="texto_link">Leia mais</a>
+                    </div>
+                </card>
+                <card class="card_principal">
+                    <div class="card_titulos">
+                        <h2 class="titulo_postagem">Titulo postagem 2</h2>
+                        <h3 class="subtitulo_card">postado 20 de março 2022</h3>
+                    </div>
+                    <img class="imagem_card" src="imagens/imagem2.jpg">
+                    <div class="card_texto">
+                        <p class="card_paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corrupti
+                            explicabo maxime non vitae earum nesciunt exercitationem. Vel eos vero dolor tempore
+                            incidunt accusamus sapiente earum tenetur! Illum, sunt repudiandae!</p>
+                        <a class="texto_link">Leia mais</a>
+                    </div>
+                </card>
+            </section>
+            <section class="containers_laterais">
+                <card class="card_lateral">
+                    <h1 class="titulo_card_lateral">postagens recentes</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci enim, assumenda neque dicta
+                        laudantium </p>
+                    <a class="texto_link">Leia mais</a>
+                    <hr>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci enim, assumenda neque dicta
+                        laudantium </p>
+                    <a class="texto_link">Leia mais</a>
+
+                </card>
+                <card class="card_lateral">
+                    <h1 class="titulo_card_lateral">Categorias</h1>
+                    <ul>
+                        <li>Jogos</li>
+                        <li>Celulares</li>
+                        <li>Informatica</li>
+                        <li>Eletronicos</li>
+                        <li>Jogos</li>
+                    </ul>
+
+                </card>
+            </section>
+            
         </div>
-        <div>
-            <h2>Título da postagem 2</h2>
-            <p>postado 10 março 2022</p>
-            <img src="imagens/imagem2.jpg">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br>
-                ut labore et dolore magna Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolum reprehenderit in voluptate <br>
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <br>
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
-            </p>
-            <a class="link">Leia mais</a>
-        </div>
+        <footer class="rodapé">
+            <h3>Todos os direitos reservados</h3>
+        </footer>
     </main>
-    <aside id="lateral">
-        <div>
-            <p>Postagens recentes</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <a class="link">Leia mais</a>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <a class="link">Leia mais</a>
-        </div>
-        <div>
-            <p>Categorias</p>
-            <a>Home</a>
-            <a>Jogos</a>
-            <a>Celulares</a>
-            <a>Informática</a>
-            <a>Eletrônicos</a>
-        </div>
-    </aside>
-    <footer>
-        <h3>Todos os direitos reservados</h3>
-    </footer>
 </body>
 
 </html>
